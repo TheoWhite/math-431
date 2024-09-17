@@ -1,0 +1,34 @@
+\text{We are given the formula:}
+$$1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n+1)^2}{4}$$
+
+\text{We will prove this by induction.}
+
+\textbf{Base Case:} n = 1
+$$1^3 = \frac{1^2(1+1)^2}{4}$$
+\text{Using basic math operations:}
+$$1 = \frac{4}{4}$$
+\text{The base case holds true.}
+
+\textbf{Inductive Hypothesis:}
+Assume the formula holds for some \(n = k\), i.e.,
+$$1^3 + 2^3 + \cdots + k^3 = \frac{k^2(k+1)^2}{4}$$
+
+\textbf{Inductive Step:}
+We need to prove that the formula holds for \(n = k+1\), i.e.,
+$$1^3 + 2^3 + \cdots + k^3 + (k+1)^3 = \frac{(k+1)^2(k+2)^2}{4}$$
+
+\text{Start with the inductive hypothesis:}
+$$\frac{k^2(k+1)^2}{4} + (k+1)^3 = \frac{(k+1)^2(k+2)^2}{4}$$
+
+\text{Factor the left-hand side:}
+$$\frac{k^2(k+1)^2}{4} + (k+1)^3 = \frac{(k+1)^2}{4}(k^2 + 4(k+1))$$
+
+\text{Simplify the expression:}
+$$\frac{(k+1)^2}{4}(k^2 + 4k + 4) = \frac{(k+1)^2(k+2)^2}{4}$$
+
+\text{Thus, the inductive step is proven.}
+
+\textbf{Conclusion:} 
+By mathematical induction, the formula
+$$1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n+1)^2}{4}$$
+is true for all positive integers \(n\).
